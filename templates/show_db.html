@@ -1,0 +1,8 @@
+<h1> Cats Database</h1>
+
+{% for cat in all_cats %}
+    <h3>{{ cat.name }} </h3>
+    <h3>{{ cat.age }} years old</h3>
+    <h3>Was born at {{ cat.bdate }}</h3>
+    <img src="{{ cat.image }}" alt="cat_image" width="300" height="300">
+{% endfor %}
